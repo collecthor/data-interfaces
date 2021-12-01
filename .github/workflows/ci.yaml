@@ -1,0 +1,36 @@
+name: Continous integration
+on: [push, pull_request]
+jobs:
+  cs:
+    name: Check code style
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: symplify/easy-coding-standard, phpstan
+      - name: Test code style
+        run: ecs
+  commitlint:
+    name: commit-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ahmadnassri/action-commit-lint@v1
+        with:
+         config: conventional
+  release:
+    name: Automated release
+    needs: [cs]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - run: npm ci
+        name: Install NPM dependencies for semantic-release
+      - run: $(npm bin)/semantic-release -d
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

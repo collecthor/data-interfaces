@@ -1,0 +1,40 @@
+{
+    "name": "collecthor/data-interfaces",
+    "description": "Interfaces for defining data structure like Survey data",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Collecthor\\DataInterfaces\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sam Mousa",
+            "email": "sam@mousa.nl"
+        }
+    ],
+    "require": {
+        "php": ">= 8.1"
+
+    },
+
+    "scripts": {
+        "cghooks": "vendor/bin/cghooks",
+        "post-install-cmd": "cghooks add --ignore-lock",
+        "post-update-cmd": "cghooks update"
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "vendor/bin/ecs",
+                "vendor/bin/phpstan"
+            ]
+        }
+    },
+    "require-dev": {
+        "brainmaestro/composer-git-hooks": "^2.8",
+        "symplify/easy-coding-standard": "^9.4",
+        "phpstan/phpstan": "^1.2"
+    }
+}
