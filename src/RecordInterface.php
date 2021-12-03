@@ -12,7 +12,7 @@ interface RecordInterface
 {
     /**
      * Retrieve a value given by path to the data.
-     * @param non-empty-array<string> $path
+     * @param non-empty-list<string> $path
      * @return string|int|float|null|array<mixed>
      */
     public function getDataValue(array $path): string|int|float|null|array;
