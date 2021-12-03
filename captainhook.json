@@ -20,7 +20,7 @@
                 "conditions": []
             },
             {
-                "action": "/vendor/bin/ecs",
+                "action": "vendor/bin/ecs",
                 "options": [],
                 "conditions": []
             }
