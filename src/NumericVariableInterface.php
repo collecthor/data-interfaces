@@ -3,7 +3,9 @@ declare(strict_types=1);
 
 namespace Collecthor\DataInterfaces;
 
-
+/**
+ * A variable for which all valid values are numeric values
+ */
 interface NumericVariableInterface extends VariableInterface
 {
     public function getValue(RecordInterface $record): NumericValueInterface|InvalidValueInterface;
@@ -14,11 +16,5 @@ interface NumericVariableInterface extends VariableInterface
      * a fallback MUST be used and an exeception MUST NOT be thrown
      */
     public function getDisplayValue(RecordInterface $record, null|string $locale = null): StringValueInterface;
-
-    /**
-     * Return the type of measure for this variable
-     * @return self::MEASURE_SCALE|self::MEASURE_ORDINAL|self::MEASURE_NOMINAL
-     */
-    public function getMeasure(): string;
 
 }

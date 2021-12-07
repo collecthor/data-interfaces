@@ -1,6 +1,13 @@
 name: Continous integration
 on: [push, pull_request]
 jobs:
+  commitlint:
+    name: commit-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ahmadnassri/action-commit-lint@v1
+        with:
+          config: conventional
   cs:
     name: Check code style
     runs-on: ubuntu-latest
@@ -10,19 +17,21 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          tools: symplify/easy-coding-standard, phpstan
+          tools: symplify/easy-coding-standard, phpstan, phpDocumentor
       - name: Test code style
         run: ecs
-  commitlint:
-    name: commit-lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: ahmadnassri/action-commit-lint@v1
+      - name: Create docs
+        run: phpdoc run
+      - name: Deploy coverage to pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-         config: conventional
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
   release:
     name: Automated release
-    needs: [cs]
+    needs:
+      - cs
+      - commitlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

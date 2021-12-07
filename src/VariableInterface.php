@@ -6,10 +6,6 @@ namespace Collecthor\DataInterfaces;
 
 interface VariableInterface
 {
-    public const MEASURE_SCALE = 'scale';
-    public const MEASURE_ORDINAL = 'ordinal';
-    public const MEASURE_NOMINAL = 'nominal';
-
     /**
      * @return string A unique identifier for the variable
      */
@@ -36,8 +32,7 @@ interface VariableInterface
 
     /**
      * Return the type of measure for this variable
-     * @return self::MEASURE_SCALE|self::MEASURE_ORDINAL|self::MEASURE_NOMINAL
      */
-    public function getMeasure(): string;
+    public function getMeasure(): Measure;
 
 }

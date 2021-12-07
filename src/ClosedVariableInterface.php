@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Collecthor\DataInterfaces;
 
+/**
+ * A closed variable is a variable with a finite number of valid values
+ */
 interface ClosedVariableInterface extends VariableInterface
 {
     /**
