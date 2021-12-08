@@ -32,7 +32,9 @@ interface VariableInterface
 
     /**
      * Return the type of measure for this variable
+     * @todo Use an enum as soon as PHPstan supports this.
+     * @phpstan-return "nominal"|"ordinal"|"scale"
      */
-    public function getMeasure(): Measure;
+    public function getMeasure(): string;
 
 }
