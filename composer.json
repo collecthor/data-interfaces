@@ -24,5 +24,10 @@
         "phpstan/phpstan": "^1.2",
         "ramsey/conventional-commits": "^1.2",
         "captainhook/plugin-composer": "^5.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "captainhook/plugin-composer": true
+        }
     }
 }
