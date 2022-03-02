@@ -8,8 +8,8 @@ jobs:
       - uses: ahmadnassri/action-commit-lint@v1
         with:
           config: conventional
-  cs:
-    name: Check code style
+  code_checks:
+    name: Check code
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,17 +17,27 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          tools: symplify/easy-coding-standard, phpstan, phpDocumentor
+          tools: symplify/easy-coding-standard
       - name: Test code style
         run: ecs
+      - name: Static analysis (phpstan)
+        run: vendor/bin/phpstan
+      - name: Static analysis (Psalm)
+        run: vendor/bin/psalm
   docs:
     name: Create docs
     if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     needs:
-      - cs
+      - code_checks
       - commitlint
     steps:
+      - uses: actions/checkout@v2
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: phpDocumentor
       - name: Create docs
         run: phpdoc run
       - name: Deploy docs to pages
@@ -39,7 +49,7 @@ jobs:
     name: Automated release
     if: ${{ github.ref == 'refs/heads/master' }}
     needs:
-      - cs
+      - code_checks
       - commitlint
     runs-on: ubuntu-latest
     steps:
