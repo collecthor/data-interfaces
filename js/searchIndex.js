@@ -41,6 +41,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Collecthor-DataInterfaces-InvalidValueInterface.html#method_isSystemMissing"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\Measure",
+            "name": "Measure",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-Measure.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\Measure\u003A\u003ANominal",
+            "name": "Nominal",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\Measure\u003A\u003AOrdinal",
+            "name": "Ordinal",
+            "summary": "",
+            "url": ""
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\Measure\u003A\u003AScale",
+            "name": "Scale",
+            "summary": "",
+            "url": ""
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\MissingValueInterface",
             "name": "MissingValueInterface",
             "summary": "This\u0020models\u0020a\u0020missing\u0020value",
