@@ -17,13 +17,13 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.1'
-          tools: symplify/easy-coding-standard
+          tools: symplify/easy-coding-standard, psalm, phpstan
       - name: Test code style
         run: ecs
       - name: Static analysis (phpstan)
-        run: vendor/bin/phpstan
+        run: phpstan
       - name: Static analysis (Psalm)
-        run: vendor/bin/psalm
+        run: psalm
   docs:
     name: Create docs
     if: ${{ github.ref == 'refs/heads/master' }}
