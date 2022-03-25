@@ -22,6 +22,8 @@ jobs:
         run: ecs
       - name: Static analysis (phpstan)
         run: phpstan
+      - name: Create autoloader
+        run: composer dumpa
       - name: Static analysis (Psalm)
         run: psalm
   docs:
