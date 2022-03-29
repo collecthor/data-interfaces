@@ -31,4 +31,12 @@ interface RecordInterface
      * Since there is no interface for immutable date times, implementations MUST return a fresh object every time.
      */
     public function getLastUpdate(): DateTimeInterface;
+
+    /**
+     * Serialize the record into an array with fixed structure:
+     * - 4 top level keys: data, id, started, lastUpdate
+     * @return array
+     * @phpstan-return array{id: int, started: DateTimeInterface, lastUpdate: DateTimeInterface, data: array<string, mixed>}
+     */
+    public function asArray(): array;
 }
