@@ -121,6 +121,11 @@ Search.appendIndex(
             "summary": "Since\u0020there\u0020is\u0020no\u0020interface\u0020for\u0020immutable\u0020date\u0020times,\u0020implementations\u0020MUST\u0020return\u0020a\u0020fresh\u0020object\u0020every\u0020time.",
             "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_getLastUpdate"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AasArray\u0028\u0029",
+            "name": "asArray",
+            "summary": "Serialize\u0020the\u0020record\u0020into\u0020an\u0020array\u0020with\u0020fixed\u0020structure\u003A\n\u002D\u00204\u0020top\u0020level\u0020keys\u003A\u0020data,\u0020id,\u0020started,\u0020lastUpdate",
+            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_asArray"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\StringValueInterface",
             "name": "StringValueInterface",
             "summary": "",
