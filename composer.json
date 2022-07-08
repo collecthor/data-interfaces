@@ -20,7 +20,7 @@
     },
 
     "require-dev": {
-        "symplify/easy-coding-standard": "^9.4",
+        "symplify/easy-coding-standard": ">= 11",
         "phpstan/phpstan": "^1.5",
         "ramsey/conventional-commits": "^1.2",
         "captainhook/plugin-composer": "^5.3",
