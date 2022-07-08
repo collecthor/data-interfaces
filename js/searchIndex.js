@@ -191,6 +191,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Collecthor-DataInterfaces-ValueOptionInterface.html#method_getDisplayValue"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\ValueOptionInterface\u003A\u003AgetDisplayValues\u0028\u0029",
+            "name": "getDisplayValues",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-ValueOptionInterface.html#method_getDisplayValues"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\ValueOptionInterface\u003A\u003ADEFAULT_LOCALE",
             "name": "DEFAULT_LOCALE",
             "summary": "",
