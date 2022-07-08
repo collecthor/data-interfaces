@@ -41,6 +41,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Collecthor-DataInterfaces-InvalidValueInterface.html#method_isSystemMissing"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableInterface",
+            "name": "JavascriptVariableInterface",
+            "summary": "This\u0020interface\u0020extends\u0020the\u0020variable\u0020interface\u0020and\u0020adds\u0020methods\u0020for\u0020doing\u0020the\u0020annotation\u0020on\u0020the\u0020client\u0020side.",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableInterface.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableInterface\u003A\u003AgetJavascriptRepresentation\u0028\u0029",
+            "name": "getJavascriptRepresentation",
+            "summary": "This\u0020creates\u0020a\u0020plain\u0020javascript\u0020object\u0020with\u0020the\u0020following\u0020structure\u003A\n\u007B\n\u0020\u0020\u0020\u0020getName\u0028\u0029\u003A\u0020string,\n\u0020\u0020\u0020\u0020getTitle\u0028string\u007Cnull\u0020locale\u0029\u003A\u0020string,\n\u0020\u0020\u0020\u0020getValue\u0028dict\u0020record\u0029\u003A\u0020TBD,\n\u0020\u0020\u0020\u0020getMeasure\u0028\u0029\u003A\u0020nominal\u007Cordinal\u007Cscale\n\u0020\u0020\u0020\u0020getDisplayValue\u0028dict\u0020record,\u0020string\u007Cnull\u0020locale\u0029\u003A\u0020string\n\u007D",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableInterface.html#method_getJavascriptRepresentation"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableSetInterface",
+            "name": "JavascriptVariableSetInterface",
+            "summary": "A\u0020javascript\u0020variable\u0020set\u0020guarantees\u0020that\u0020all\u0020variables\u0020can\u0020expose\u0020an\u0020object\u0020for\u0020annotating\u0020responses\u0020on\u0020the\u0020client\nside",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableSetInterface.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableSetInterface\u003A\u003AgetVariableNames\u0028\u0029",
+            "name": "getVariableNames",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableSetInterface.html#method_getVariableNames"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableSetInterface\u003A\u003AgetVariable\u0028\u0029",
+            "name": "getVariable",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableSetInterface.html#method_getVariable"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\JavascriptVariableSetInterface\u003A\u003AgetVariables\u0028\u0029",
+            "name": "getVariables",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-JavascriptVariableSetInterface.html#method_getVariables"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\Measure",
             "name": "Measure",
             "summary": "",
