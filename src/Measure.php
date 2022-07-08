@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Collecthor\DataInterfaces;
 
-enum Measure
+enum Measure: string
 {
-    case Nominal;
-    case Ordinal;
-    case Scale;
+    case Nominal = 'nominal';
+    case Ordinal = 'ordinal';
+    case Scale = 'scale';
 }
