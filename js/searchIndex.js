@@ -128,7 +128,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface",
             "name": "RecordInterface",
-            "summary": "Models\u0020a\u0020record\u0020that\u0020internally\u0020stores\u0020its\u0020data\u0020in\u0020an\u0020associative\u0020array",
+            "summary": "",
             "url": "classes/Collecthor-DataInterfaces-RecordInterface.html"
         },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AgetDataValue\u0028\u0029",
@@ -136,25 +136,30 @@ Search.appendIndex(
             "summary": "Retrieve\u0020a\u0020value\u0020given\u0020by\u0020path\u0020to\u0020the\u0020data.",
             "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_getDataValue"
         },                {
-            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AgetRecordId\u0028\u0029",
+            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AallData\u0028\u0029",
+            "name": "allData",
+            "summary": "Return\u0020the\u0020data\u0020in\u0020the\u0020record",
+            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_allData"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\StoredRecordInterface",
+            "name": "StoredRecordInterface",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-StoredRecordInterface.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\StoredRecordInterface\u003A\u003AgetRecordId\u0028\u0029",
             "name": "getRecordId",
             "summary": "Return\u0020the\u0020unique\u0020ID\u0020of\u0020this\u0020record",
-            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_getRecordId"
+            "url": "classes/Collecthor-DataInterfaces-StoredRecordInterface.html#method_getRecordId"
         },                {
-            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AgetStarted\u0028\u0029",
+            "fqsen": "\\Collecthor\\DataInterfaces\\StoredRecordInterface\u003A\u003AgetStarted\u0028\u0029",
             "name": "getStarted",
             "summary": "Since\u0020there\u0020is\u0020no\u0020interface\u0020for\u0020immutable\u0020date\u0020times,\u0020implementations\u0020MUST\u0020return\u0020a\u0020fresh\u0020object\u0020every\u0020time.",
-            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_getStarted"
+            "url": "classes/Collecthor-DataInterfaces-StoredRecordInterface.html#method_getStarted"
         },                {
-            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AgetLastUpdate\u0028\u0029",
+            "fqsen": "\\Collecthor\\DataInterfaces\\StoredRecordInterface\u003A\u003AgetLastUpdate\u0028\u0029",
             "name": "getLastUpdate",
             "summary": "Since\u0020there\u0020is\u0020no\u0020interface\u0020for\u0020immutable\u0020date\u0020times,\u0020implementations\u0020MUST\u0020return\u0020a\u0020fresh\u0020object\u0020every\u0020time.",
-            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_getLastUpdate"
-        },                {
-            "fqsen": "\\Collecthor\\DataInterfaces\\RecordInterface\u003A\u003AasArray\u0028\u0029",
-            "name": "asArray",
-            "summary": "Serialize\u0020the\u0020record\u0020into\u0020an\u0020array\u0020with\u0020fixed\u0020structure\u003A\n\u002D\u00204\u0020top\u0020level\u0020keys\u003A\u0020data,\u0020id,\u0020started,\u0020lastUpdate",
-            "url": "classes/Collecthor-DataInterfaces-RecordInterface.html#method_asArray"
+            "url": "classes/Collecthor-DataInterfaces-StoredRecordInterface.html#method_getLastUpdate"
         },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\StringValueInterface",
             "name": "StringValueInterface",
