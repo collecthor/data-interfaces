@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Collecthor\DataInterfaces;
 
-interface RecordInterface extends StoredRecordInterface
+interface RecordInterface
 {
     /**
      * Retrieve a value given by path to the data.

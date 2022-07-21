@@ -5,7 +5,7 @@ namespace Collecthor\DataInterfaces;
 
 use DateTimeInterface;
 
-interface StoredRecordInterface
+interface StoredRecordInterface extends RecordInterface
 {
     /**
      * Return the unique ID of this record
