@@ -6,5 +6,8 @@ namespace Collecthor\DataInterfaces;
 
 interface ValueInterface
 {
-    public function getRawValue(): string|int|float|null;
+    /**
+     * @return string|int|float|array<mixed>|null
+     */
+    public function getRawValue(): string|int|float|null|array;
 }
