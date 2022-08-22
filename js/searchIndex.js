@@ -246,6 +246,11 @@ Search.appendIndex(
             "summary": "Return\u0020the\u0020type\u0020of\u0020measure\u0020for\u0020this\u0020variable",
             "url": "classes/Collecthor-DataInterfaces-VariableInterface.html#method_getMeasure"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\VariableInterface\u003A\u003AgetRawConfigurationValue\u0028\u0029",
+            "name": "getRawConfigurationValue",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-VariableInterface.html#method_getRawConfigurationValue"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\VariableSetInterface",
             "name": "VariableSetInterface",
             "summary": "",
