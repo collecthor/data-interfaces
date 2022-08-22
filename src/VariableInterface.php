@@ -35,4 +35,5 @@ interface VariableInterface
      */
     public function getMeasure(): Measure;
 
+    public function getRawConfigurationValue(string $key): mixed;
 }
