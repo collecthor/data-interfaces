@@ -8,9 +8,9 @@ interface RecordInterface
     /**
      * Retrieve a value given by path to the data.
      * @phpstan-param non-empty-list<string> $path
-     * @return string|int|float|null|array<mixed>
+     * @return string|int|float|bool|null|array<mixed>
      */
-    public function getDataValue(array $path): string|int|float|null|array;
+    public function getDataValue(array $path): string|int|float|bool|null|array;
 
     /**
      * Return the data in the record
