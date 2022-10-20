@@ -9,7 +9,7 @@ namespace Collecthor\DataInterfaces;
 interface ClosedVariableInterface extends VariableInterface
 {
     /**
-     * @return ValueOptionInterface[] A list of value options
+     * @return non-empty-list<ValueOptionInterface> A list of value options
      */
     public function getValueOptions(): array;
 
