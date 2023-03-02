@@ -26,6 +26,31 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Collecthor-DataInterfaces-ClosedVariableInterface.html#method_getValueOptions"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\DateTimeValueInterface",
+            "name": "DateTimeValueInterface",
+            "summary": "A\u0020datetime\u0020value",
+            "url": "classes/Collecthor-DataInterfaces-DateTimeValueInterface.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\DateTimeValueInterface\u003A\u003AgetRawValue\u0028\u0029",
+            "name": "getRawValue",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-DateTimeValueInterface.html#method_getRawValue"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\DateTimeVariableInterface",
+            "name": "DateTimeVariableInterface",
+            "summary": "A\u0020variable\u0020to\u0020store\u0020DateTime\u0020values",
+            "url": "classes/Collecthor-DataInterfaces-DateTimeVariableInterface.html"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\DateTimeVariableInterface\u003A\u003AgetValue\u0028\u0029",
+            "name": "getValue",
+            "summary": "Extracts\u0020the\u0020variable\u0020value\u0020from\u0020a\u0020record",
+            "url": "classes/Collecthor-DataInterfaces-DateTimeVariableInterface.html#method_getValue"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\DateTimeVariableInterface\u003A\u003AgetDisplayValue\u0028\u0029",
+            "name": "getDisplayValue",
+            "summary": "Extract\u0020a\u0020display\u0020value\u0020from\u0020a\u0020record\nIf\u0020a\u0020locale\u0020is\u0020given\u0020the\u0020display\u0020value\u0020should\u0020be\u0020returned\u0020using\u0020the\u0020given\u0020locale.\u0020If\u0020the\u0020locale\u0020is\u0020not\u0020available\na\u0020fallback\u0020MUST\u0020be\u0020used\u0020and\u0020an\u0020exeception\u0020MUST\u0020NOT\u0020be\u0020thrown",
+            "url": "classes/Collecthor-DataInterfaces-DateTimeVariableInterface.html#method_getDisplayValue"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\InvalidValueInterface",
             "name": "InvalidValueInterface",
             "summary": "This\u0020models\u0020a\u0020value\u0020that\u0020is\u0020not\u0020valid\u0020according\u0020to\u0020the\u0020survey\u0020structure",
