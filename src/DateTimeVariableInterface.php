@@ -9,7 +9,7 @@ namespace Collecthor\DataInterfaces;
 
 interface DateTimeVariableInterface extends VariableInterface
 {
-    public function getValue(RecordInterface $record): DateTimeValueInterface;
+    public function getValue(RecordInterface $record): MissingValueInterface | DateTimeValueInterface;
     
     public function getDisplayValue(RecordInterface $record, ?string $locale = null): StringValueInterface;
 
