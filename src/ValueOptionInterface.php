@@ -14,4 +14,8 @@ interface ValueOptionInterface extends ValueInterface
      */
     public function getDisplayValues(): array;
 
+    public function isNone(): bool;
+
+    public function isOther(): bool;
+    
 }
