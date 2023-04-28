@@ -226,6 +226,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Collecthor-DataInterfaces-ValueOptionInterface.html#method_getDisplayValues"
         },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\ValueOptionInterface\u003A\u003AisNone\u0028\u0029",
+            "name": "isNone",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-ValueOptionInterface.html#method_isNone"
+        },                {
+            "fqsen": "\\Collecthor\\DataInterfaces\\ValueOptionInterface\u003A\u003AisOther\u0028\u0029",
+            "name": "isOther",
+            "summary": "",
+            "url": "classes/Collecthor-DataInterfaces-ValueOptionInterface.html#method_isOther"
+        },                {
             "fqsen": "\\Collecthor\\DataInterfaces\\ValueOptionInterface\u003A\u003ADEFAULT_LOCALE",
             "name": "DEFAULT_LOCALE",
             "summary": "",
