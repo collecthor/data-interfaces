@@ -17,7 +17,5 @@ interface ValueOptionInterface extends ValueInterface
     public function isNone(): bool;
 
     public function isOther(): bool;
-
-    public function isSystemMissing(): bool;
-
+    
 }
